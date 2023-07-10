@@ -1,6 +1,6 @@
 {
   "name": "yaml-template-engine",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,11 +16,14 @@
     "ejs": "^3.1.9",
     "yaml": "^2.3.1"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/taharactrl/yaml-template-engine.git"
   },
-  "keywords": ["yaml", "template"],
+  "keywords": [
+    "yaml",
+    "template"
+  ],
   "bugs": {
     "url": "https://github.com/taharactrl/yaml-template-engine/issues"
   }
