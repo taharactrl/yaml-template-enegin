@@ -25,7 +25,7 @@ const templateFilePath = options.templateFile;
 const outputFilePath = options.outputFile;
 
 const data = options.dataFile
-  ? yaml.parse(fs.readdirSync(dataFile, "utf-8"))
+  ? yaml.parse(fs.readdirSync(options.dataFile, "utf-8"))
   : process.env;
 
 const templateFile = fs.readFileSync(templateFilePath, "utf-8");
