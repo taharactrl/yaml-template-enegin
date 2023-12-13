@@ -13,7 +13,7 @@ program
   )
   .option("-o, --output-file <file>", "output yaml file path", "output.yaml")
   .option(
-    "-d, --data-file",
+    "-d, --data-file <file>",
     "data yaml file path. If this is empty, environmental variables are used."
   )
   .option("-v, --verbose", "verbose");
@@ -25,7 +25,7 @@ const templateFilePath = options.templateFile;
 const outputFilePath = options.outputFile;
 
 const data = options.dataFile
-  ? yaml.parse(fs.readdirSync(options.dataFile, "utf-8"))
+  ? yaml.parse(fs.readFileSync(options.dataFile, "utf-8"))
   : process.env;
 
 const templateFile = fs.readFileSync(templateFilePath, "utf-8");
